@@ -2,7 +2,7 @@ ENV['RACK_ENV'] = 'test'
 require 'capybara/rspec'
 require 'sequel'
 
-#database connection to come
+DB=Sequel.connect('postgres://gschool_user:password@localhost/songs_test')
 
 
 RSpec.configure do |config|

@@ -5,4 +5,9 @@ class SongApp < Sinatra::Application
 
     erb :index
   end
+
+  post '/' do
+
+    redirect '/'
+  end
 end
