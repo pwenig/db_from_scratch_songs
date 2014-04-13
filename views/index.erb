@@ -8,5 +8,10 @@
   <input type="text" placeholder="Song List" name="song">
   <input type="submit" value="Add Song">
 </form>
+<ul>
+<% songs.each do |song| %>
+ <li><%= song[:song] %></li>
+<% end %>
+</ul>
 </body>
 </html>
