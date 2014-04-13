@@ -5,12 +5,13 @@
 </head>
 <body>
 <form action="/" method="post">
-  <input type="text" placeholder="Song List" name="song">
+  <input type="text" placeholder="Song" name="song">
+  <input type="text" placeholder="Album" name="album">
   <input type="submit" value="Add Song">
 </form>
 <ul>
 <% songs.each do |song| %>
- <li><%= song[:song] %></li>
+ <li><%= song[:song] %> || <%= song[:album] %></li>
 <% end %>
 </ul>
 </body>

@@ -8,7 +8,7 @@ class SongApp < Sinatra::Application
 
   post '/' do
     song_table = DB[:songs]
-    song_table.insert(song: params[:song])
+    song_table.insert(song: params[:song], album: params[:album])
     redirect '/'
   end
 end
